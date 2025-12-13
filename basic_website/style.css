@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Style (CSS layout + typography) */
+.site-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(90deg, #4a90e2, #5c6bc0);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.site-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Cards Container (CSS grid for responsive layout) */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+/* Card Style (CSS shadows, borders, hover effects) */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* CSS animation on hover */
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Color-code cards by tech (CSS custom colors) */
+#html-card .card-icon, #html-card h2 { color: #e34f26; }
+#css-card .card-icon, #css-card h2 { color: #264de4; }
+#js-card .card-icon, #js-card h2 { color: #f7df1e; }
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Hidden description (CSS display control) */
+.card-desc {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button Style (CSS hover + transition) */
+.learn-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#html-card .learn-btn { background-color: #e34f26; color: white; }
+#html-card .learn-btn:hover { background-color: #c13515; }
+
+#css-card .learn-btn { background-color: #264de4; color: white; }
+#css-card .learn-btn:hover { background-color: #1a36b4; }
+
+#js-card .learn-btn { background-color: #f7df1e; color: #333; }
+#js-card .learn-btn:hover { background-color: #e6d21b; }
+
+/* Footer Style (CSS alignment) */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+}
+ 
